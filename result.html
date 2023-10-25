@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HealthBot Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>HealthBot Diagnosis</h1>
+    <p>Name: {{ name }}</p>
+    <p>Language: {{ language }}</p>
+    <p>Age: {{ age }}</p>
+    <p>Blood Group: {{ blood_group }}</p>
+    <p>Has Serious Health Condition: {{ health_disease }}</p>
+    <p>Allergies: {{ allergy }}</p>
+
+    <p>{{ diagnosis }}</p>
+    <p>{{ precautions }}</p>
+    <p>{{ meds }}</p>
+</body>
+</html>

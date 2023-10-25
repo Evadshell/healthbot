@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>HealthBot</title>
+</head>
+<body>
+    <div id="app">
+        <h1>HealthBot</h1>
+        <div class="user-input">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name">
+            <label for="age">Enter your age:</label>
+            <input type="text" id="age">
+            <label for="gender">Select your gender:</label>
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="blood-group">Select your blood group:</label>
+            <select id="blood-group">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <label for="health-disease">Do you have any serious health conditions?</label>
+            <input type="checkbox" id="health-disease">
+            <label for="allergy">Do you have any allergies?</label>
+            <input type="text" id="allergy">
+            <label for="weight">Enter your weight (kg):</label>
+            <input type="text" id="weight">
+            <label for="height">Enter your height (cm):</label>
+            <input type="text" id="height">
+            
+            <!-- Add symptom checkboxes for user to select -->
+            <label>Select Symptoms:</label>
+            <input type="checkbox" id="symptoms-cough" value="Cough"> Cough
+            <input type="checkbox" id="symptoms-fever" value="Fever"> Fever
+            <input type="checkbox" id="symptoms-chest-pain" value="Chest Pain"> Chest Pain
+            <input type="checkbox" id="symptoms-stomach-pain" value="Stomach Pain"> Stomach Pain
+            <input type="checkbox" id="symptoms-shortness-of-breath" value="Shortness of Breath"> Shortness of Breath
+            <input type="checkbox" id="symptoms-headache" value="Headache"> Headache
+            <button id="start-btn">Start Questionnaire</button>
+        </div>
+        <div class="results" id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>

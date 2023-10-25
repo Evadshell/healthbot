@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I Love Leora</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #ff99cc, #99ccff);
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      background-color: #ff99cc;
+      transform: rotate(-45deg);
+      animation: float 2s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 90px;
+      background-color: #ff99cc;
+      border-radius: 100px 100px 0 0;
+    }
+
+    .heart::before {
+      left: 50px;
+      transform: rotate(45deg);
+    }
+
+    .heart::after {
+      left: 0;
+      transform: rotate(-45deg);
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #fff;
+      text-shadow: 2px 2px 4px #ff66b2;
+    }
+
+    .floating-object {
+      position: absolute;
+      animation: float 5s infinite;
+    }
+
+    .floating-object1 {
+      width: 30px;
+      height: 30px;
+      background-color: #99ccff;
+      border-radius: 50%;
+      left: 10%;
+      top: 10%;
+    }
+
+    .floating-object2 {
+      width: 40px;
+      height: 40px;
+      background-color: #ff99cc;
+      border-radius: 50%;
+      left: 50%;
+      top: 30%;
+    }
+
+    .floating-object3 {
+      width: 20px;
+      height: 20px;
+      background-color: #ffff99;
+      border-radius: 50%;
+      left: 90%;
+      top: 20%;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+  <h1>I Love Leora</h1>
+  <div class="floating-object floating-object1"></div>
+  <div class="floating-object floating-object2"></div>
+  <div class="floating-object floating-object3"></div>
+</body>
+</html>
